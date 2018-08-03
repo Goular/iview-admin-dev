@@ -7,7 +7,7 @@ import App from './app.vue';
 import '@/locale';
 import 'iview/dist/styles/iview.css';
 import VueI18n from 'vue-i18n';
-import util from './libs/util';
+// import util from './libs/util';
 
 Vue.use(VueI18n);
 Vue.use(iView);
@@ -27,8 +27,8 @@ new Vue({
         this.$store.commit('initCachepage');
         // 权限菜单过滤相关
         this.$store.commit('updateMenulist');
-        // iview-admin检查更新
-        util.checkUpdate(this);
+        // iview-admin检查更新 ,关闭更新到iview-admin2.0操作
+        // util.checkUpdate(this);
     },
     created () {
         let tagsList = [];
